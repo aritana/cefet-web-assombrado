@@ -68,7 +68,7 @@ nav ul {
 
 /* --- Conteúdo principal da página --- */
 
-#conteudo-principal {
+main {
     padding-left: 2.5%;
     transition: opacity 1s linear;
     padding-bottom: 3em;
@@ -177,13 +177,13 @@ nav ul {
 
 /* --- Rodapé --- */
 
-#rodape {
+foot {
     background-color: rgba(0, 0, 0, .7);
     padding: 1em;
     display: flex;
 }
 
-#rodape .logo-rodape {
+foot .logo-rodape {
     margin-right: 2em;
 }
 

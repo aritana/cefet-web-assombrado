@@ -15,7 +15,6 @@
         <header>
             <h1>Blog Assombrado</h1>
             <h2>Notícias e reportagens sobre o desconhecido</h2>
-
             <nav>
                 <ul>
                     <li><a href="index.html">Inicial</a></li>
@@ -26,18 +25,15 @@
                     <li><a href="#especiais.html">Especiais</a></li>
                 </ul>
             </nav>
-
         </header>
-
     </div>
-
     <!-- OBS: não remova a class="desaparecido" porque ela está sendo usada pra
          esconder este elemento até o vídeo acabar (tem uma regra CSS para
          ocultar quem tem .desaparecido)-->
-    <div id="conteudo-principal" class="desaparecido">
+    <main id="conteudo-principal" class="desaparecido">
         <!-- opa, <section> já é um elemento semântico. Dica: podemos
            dividir a página em 3 seções, e esta é uma delas -->
-        <div id="tags">
+        <section id="tags">
             <h1>Nuvem de <em>tags</em></h1>
             <span class="tag-3">UFO</span>
             <span class="tag-1">OVNI</span>
@@ -46,9 +42,9 @@
             <span class="tag-2">Assombrações</span>
             <span class="tag-3">Local mal-assombrado</span>
             <span class="tag-1">Saci</span>
-        </div>
+        </section>
 
-        <div id="posts-principais">
+        <section id="posts-principais">
             <h1>Principais Postagens</h1>
             <div class="post">
                 <img src="imgs/arvores.jpg" alt="Uma floresta com várias árvores com caules tortos com espaço de aproximadamente 2m entre cada">
@@ -64,9 +60,9 @@
                 </h2>
                 <span class="data-horario" datetime="2021-05-09">07 de maio de 2021</span>
             </div>
-        </div>
+        </section>
 
-        <div id="ultimas-postagens">
+        <section id="ultimas-postagens">
             <h1>Últimas Postagens</h1>
             <!-- class="palavra1 palavra2" quer dizer que o elemento possui DUAS
              CLASSES. Portanto, uma regra CSS .palavra1 seleciona ele, bem
@@ -95,10 +91,10 @@
                     Sereias: Lenda, Fotos, Vídeos, Relatos e Análises. Será que elas existem?
                 </h2>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
 
-    <div id="rodape">
+    <footer id="rodape">
         <img class="logo-rodape" src="imgs/logo-assombrado.png" alt="Logo do canal do Youtube Assombrado composto por uma letra A dentro de um círculo e os dizeres 'O desconhecido levado a sério'">
         <div>
             <p class="texto-rodape">
@@ -109,14 +105,14 @@
             <div id="inscreva-se">
             </div>
         </div>
-    </div>
+    </footer>
 
     <!-- não remova a class="backdrop" porque ela está sendo usada para
          estilizar este elemento no CSS e usada também no JavaScript para ocultar
          o vídeo depois que ele acaba -->
-    <div class="backdrop">
+    <aside class="backdrop">
         <video src="videos/vinheta.mp4" autoplay muted id="vinheta"></video>
-    </div>
+    </aside>
     <button id="unmute">🔉</button>
 
     <script>
