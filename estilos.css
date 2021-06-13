@@ -158,10 +158,15 @@ main {
     display: inline-block;
     border-radius: 2px;
     padding: 2px 4px;
-    margin: 9px 2px 2px;
+    margin: 2px;
     background-color: orange;
     color: white;
     text-shadow: 1px 1px black;
+}
+.tag-1:first-of-type,
+.tag-2:first-of-type,
+.tag-3:first-of-type {
+    margin-top: 20px;
 }
 .tag-2 {
     font-size: 125%;
