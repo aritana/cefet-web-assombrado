@@ -243,3 +243,8 @@ foot .logo-rodape {
     border-color: currentColor;
     box-shadow: none;
 }
+.logo-rodape {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 8px;
+}
