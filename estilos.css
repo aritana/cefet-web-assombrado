@@ -51,7 +51,7 @@ header {
     text-align: center;
 }
 
-header ul {
+nav {
     background-color: rgba(0, 204, 147, 0.53);
 }
 
@@ -61,30 +61,38 @@ header a {
 }
 
 nav ul {
-    margin-bottom: 0;
     list-style-type: none;
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+}
+
+nav ul>li {
+    text-align: center;
+    flex: 1;
+    margin-left: 2px;
+    margin-left: 2px;
 }
 
 
-/* --- Conteúdo principal da página --- */
+}
 
+/* --- Conteúdo principal da página --- */
 main {
     padding-left: 2.5%;
     transition: opacity 1s linear;
     padding-bottom: 3em;
 }
 
-
 /* --- Principal >> Postagens principais --- */
-
 #posts-principais {
     padding-top: 1.5em;
 }
-
 #posts-principais h1 {
     margin-bottom: 1em;
 }
-
 #posts-principais .post {
     width: 40%;
     max-width: 400px;
@@ -92,11 +100,9 @@ main {
     margin-right: 2.5%;
     display: inline-block;
 }
-
 #posts-principais .post .titulo {
     text-shadow: 1px 1px black;
 }
-
 #posts-principais .post img {
     width: 100%;
     max-width: 400px;
@@ -105,19 +111,15 @@ main {
     margin-bottom: .5em;
 }
 
-
 /* --- Principal >> Últimas postagens --- */
-
 #ultimas-postagens {
     margin-top: 3em;
     margin-bottom: 1em;
 }
-
 #ultimas-postagens .post {
     margin-top: 1em;
     margin-bottom: 1em;
 }
-
 #ultimas-postagens .post .data-horario {
     background-color: white;
     color: #333;
@@ -127,16 +129,13 @@ main {
     display: inline-block;
     margin-right: 1em;
 }
-
 #ultimas-postagens .titulo {
     font-size: 16px;
     line-height: 22px;
     display: inline-block;
 }
 
-
 /* --- Principal >> Nuvem de tags --- */
-
 #tags {
     float: right;
     width: 300px;
@@ -148,12 +147,10 @@ main {
     box-shadow: -4px 0 10px rgba(0, 0, 0, 0.5);
     text-align: center;
 }
-
 #tags h1 {
     margin-bottom: 1em;
     text-shadow: 2px 2px #000;
 }
-
 .tag-1,
 .tag-2,
 .tag-3 {
@@ -165,31 +162,24 @@ main {
     color: white;
     text-shadow: 1px 1px black;
 }
-
 .tag-2 {
     font-size: 125%;
 }
-
 .tag-3 {
     font-size: 150%;
 }
 
-
 /* --- Rodapé --- */
-
 foot {
     background-color: rgba(0, 0, 0, .7);
     padding: 1em;
     display: flex;
 }
-
 foot .logo-rodape {
     margin-right: 2em;
 }
 
-
 /* --- Vídeo --- */
-
 .backdrop {
     position: fixed;
     left: 0;
@@ -202,20 +192,16 @@ foot .logo-rodape {
     opacity: 1;
     visibility: visible;
 }
-
 .desaparecido {
     opacity: 0 !important;
     visibility: hidden !important;
 }
-
 .backdrop video {
     width: 100%;
 }
-
 .backdrop.desaparecido+#unmute {
     display: none;
 }
-
 #unmute {
     position: absolute;
     left: calc(50% - 0.75em);
@@ -234,22 +220,18 @@ foot .logo-rodape {
     box-shadow: 2px 2px 2px rgba(0, 0, 0, .15);
     text-shadow: 2px 2px 2px rgba(0, 0, 0, .15);
 }
-
 #unmute:hover {
     color: white;
 }
-
 #unmute:active {
     color: black;
     transform: translate(1px, 1px);
 }
-
 #unmute:focus {
     outline: none;
     border-color: transparent;
     box-shadow: 0 0 0 4px yellow;
 }
-
 #unmute:active:focus {
     color: black;
     border-color: currentColor;
