@@ -162,6 +162,18 @@ main {
     background-color: orange;
     color: white;
     text-shadow: 1px 1px black;
+    position: relative;
+}
+.tag-1:active,
+.tag-2:active,
+.tag-3:active {
+    left: 2px;
+    top: 2px;
+}
+.tag-1:hover,
+.tag-2:hover,
+.tag-3:hover {
+    cursor: pointer;
 }
 .tag-1:first-of-type,
 .tag-2:first-of-type,
