@@ -260,3 +260,13 @@ foot .logo-rodape {
     margin-right: 20px;
     margin-bottom: 8px;
 }
+.novidade::before {
+    content: "Novidade";
+    display: inline-block;
+    background-color: orange;
+}
+img[alt=""],
+img:not([alt]) {
+    background-color: rgb(156, 21, 21);
+    border: 50px double rgba(219, 185, 64, 255);
+}
